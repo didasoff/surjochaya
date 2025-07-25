@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surochhaya Drug Rehabilitation Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('photos/background/image.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .review-card {
+            transition: all 0.3s ease;
+        }
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .team-card {
+            transition: all 0.3s ease;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .main-member {
+            transform: scale(1.05);
+            border: 3px solid #faf068;
+            box-shadow: 0 10px 25px rgba(115, 16, 18, 0.2);
+        }
+        .motivation-card {
+            background: linear-gradient(135deg, #faf068 0%, #731012 100%);
+            color: white;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-[#731012] text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-sun text-[#faf068] text-2xl"></i>
+                <span class="text-xl font-bold">সূর্যছায়া</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-[#faf068] transition">আমাদের সম্পর্কে</a>
+                <a href="#team" class="hover:text-[#faf068] transition">আমাদের টিম</a>
+                <a href="#gallery" class="hover:text-[#faf068] transition">গ্যালারি</a>
+                <a href="#reviews" class="hover:text-[#faf068] transition">সফলতার গল্প</a>
+                <a href="#contact" class="hover:text-[#faf068] transition">যোগাযোগ</a>
+            </div>
+            <a href="tel:01646756000" class="bg-[#faf068] hover:bg-yellow-600 text-[#731012] font-bold py-2 px-4 rounded-full transition hidden md:block">
+                কল করুন
+            </a>
+            <button class="md:hidden text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-24 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">সূর্যছায়া মাদকাসক্তি পুনর্বাসন কেন্দ্র</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">একটি সুস্থ, সুন্দর জীবনের জন্য আপনার যাত্রা শুরু হোক আমাদের সাথে</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:01646756000" class="bg-[#faf068] hover:bg-yellow-600 text-[#731012] font-bold py-3 px-8 rounded-full transition flex items-center justify-center">
+                    <i class="fas fa-phone mr-2"></i> 01646-756000
+                </a>
+                <a href="https://wa.me/8801646756000" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-[#731012] mb-2">500+</div>
+                    <div class="text-gray-600">সফলভাবে পুনর্বাসিত</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-[#731012] mb-2">10+</div>
+                    <div class="text-gray-600">বছরের অভিজ্ঞতা</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-[#731012] mb-2">24/7</div>
+                    <div class="text-gray-600">জরুরি সেবা</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-[#731012] mb-2">95%</div>
+                    <div class="text-gray-600">সাফল্যের হার</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-[#731012]">আমাদের সম্পর্কে</h2>
+            <div class="flex flex-col lg:flex-row items-center gap-10">
+                <div class="lg:w-1/2">
+                    <p class="text-lg mb-6 text-gray-700 leading-relaxed">
+                        সূর্যছায়া মাদকাসক্তি পুনর্বাসন কেন্দ্র বাংলাদেশের একটি বিশ্বস্ত ও অনুমোদিত প্রতিষ্ঠান যেখানে আমরা মাদকাসক্ত ব্যক্তিদের সুস্থ ও স্বাভাবিক জীবনে ফিরিয়ে আনার জন্য সমন্বিত চিকিৎসা সেবা প্রদান করি।
+                    </p>
+                    <p class="text-lg mb-6 text-gray-700 leading-relaxed">
+                        আমাদের বিশেষজ্ঞ দলের তত্ত্বাবধানে রয়েছে আধুনিক চিকিৎসা পদ্ধতি, মানসিক কাউন্সেলিং, পারিবারিক থেরাপি এবং দীর্ঘমেয়াদী পুনর্বাসন কর্মসূচি।
+                    </p>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#731012]">
+                        <h3 class="text-xl font-bold mb-3 text-[#731012]">পরিচালকের বাণী</h3>
+                        <p class="text-gray-700 italic">"প্রতিটি জীবনই মূল্যবান। মাদকাসক্তি কোনো সমাধানহীন সমস্যা নয়। সঠিক চিকিৎসা ও সহযোগিতায় প্রতিটি মানুষই ফিরে পেতে পারেন তার সুন্দর জীবন। আমরা সূর্যছায়ায় সেই পরিবেশ ও সহযোগিতা নিশ্চিত করি।"</p>
+                        <p class="mt-4 font-semibold">- মানিক হোসেন দিপু</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Motivation Card 1 -->
+                        <div class="motivation-card p-6 rounded-lg shadow-md text-center">
+                            <i class="fas fa-heart text-3xl mb-4"></i>
+                            <p class="font-bold mb-2">বিশ্বাস রাখুন</p>
+                            <p class="text-sm">প্রতিটি নতুন দিন নতুন সুযোগ নিয়ে আসে</p>
+                        </div>
+                        <!-- Motivation Card 2 -->
+                        <div class="motivation-card p-6 rounded-lg shadow-md text-center">
+                            <i class="fas fa-hand-holding-heart text-3xl mb-4"></i>
+                            <p class="font-bold mb-2">সাহায্য চান</p>
+                            <p class="text-sm">সাহায্য চাওয়া দুর্বলতার লক্ষণ নয়</p>
+                        </div>
+                        <!-- Motivation Card 3 -->
+                        <div class="motivation-card p-6 rounded-lg shadow-md text-center">
+                            <i class="fas fa-users text-3xl mb-4"></i>
+                            <p class="font-bold mb-2">একসাথে লড়াই</p>
+                            <p class="text-sm">সমষ্টিগত প্রচেষ্টায় সবকিছু সম্ভব</p>
+                        </div>
+                        <!-- Motivation Card 4 -->
+                        <div class="motivation-card p-6 rounded-lg shadow-md text-center">
+                            <i class="fas fa-sun text-3xl mb-4"></i>
+                            <p class="font-bold mb-2">আশা রাখুন</p>
+                            <p class="text-sm">অন্ধকারের পরেই আসে আলো</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section id="team" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-[#731012]">আমাদের টিম</h2>
+            
+            <!-- Main Member Highlight -->
+            <div class="flex justify-center mb-12">
+                <div class="team-card main-member bg-gray-50 rounded-lg overflow-hidden shadow-md text-center p-6 w-full max-w-md">
+                    <img src="photos/team/manik.jpg" alt="Director" class="w-40 h-40 rounded-full object-cover mx-auto mb-4 border-4 border-[#faf068]">
+                    <h3 class="text-2xl font-bold mb-1 text-[#731012]">মানিক হোসেন দিপু</h3>
+                    <p class="text-[#731012] font-medium mb-3 text-lg">প্রতিষ্ঠাতা ও পরিচালক</p>
+                    <p class="text-gray-700">10+ years of experience in rehabilitation services. দিপু স্যার তার অক্লান্ত পরিশ্রম ও নিষ্ঠার মাধ্যমে হাজারো জীবনকে মাদকের অভিশাপ থেকে মুক্ত করেছেন। তার দূরদর্শী নেতৃত্বে সূর্যছায়া আজ বাংলাদেশের অন্যতম সেরা পুনর্বাসন কেন্দ্র।</p>
+                    <div class="mt-4 flex justify-center space-x-4">
+                        <a href="tel:01646756000" class="bg-[#731012] text-white p-2 rounded-full w-10 h-10 flex items-center justify-center">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="https://wa.me/8801646756000" class="bg-green-600 text-white p-2 rounded-full w-10 h-10 flex items-center justify-center">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:dipumanik90@gmail.com" class="bg-[#faf068] text-[#731012] p-2 rounded-full w-10 h-10 flex items-center justify-center">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Other Team Members -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Team Member 2 -->
+                <div class="team-card bg-gray-50 rounded-lg overflow-hidden shadow-md text-center p-4 transform scale-95">
+                    <img src="photos/team/img-2.png" alt="Doctor" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
+                    <h3 class="text-lg font-bold mb-1 text-[#731012]">ফয়সাল</h3>
+                    <p class="text-[#731012] text-sm font-medium mb-2">মেনেজার</p>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="team-card bg-gray-50 rounded-lg overflow-hidden shadow-md text-center p-4 transform scale-95">
+                    <img src="photos/team/img-1.png" alt="Doctor" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
+                    <h3 class="text-lg font-bold mb-1 text-[#731012]">রাকিব</h3>
+                    <p class="text-[#731012] text-sm font-medium mb-2">ইনচার্জ/p>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="team-card bg-gray-50 rounded-lg overflow-hidden shadow-md text-center p-4 transform scale-95">
+                    <img src="photos/team/img-3.png" alt="Doctor" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
+                    <h3 class="text-lg font-bold mb-1 text-[#731012]">মোঃ মনির হোসেন</h3>
+                    <p class="text-[#731012] text-sm font-medium mb-2">ইনচার্জ</p>
+                </div>
+                
+                <!-- Team Member 5 -->
+                <div class="team-card bg-gray-50 rounded-lg overflow-hidden shadow-md text-center p-4 transform scale-95">
+                    <img src="photos/team/img-4.png" alt="Doctor" class="w-24 h-24 rounded-full object-cover mx-auto mb-3">
+                    <h3 class="text-lg font-bold mb-1 text-[#731012]">মোঃ সাগর তালুকদার</h3>
+                    <p class="text-[#731012] text-sm font-medium mb-2">মার্কেটিং অফিসার</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-[#731012]">আমাদের কেন্দ্রের গ্যালারি</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Gallery Item 1 -->
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Center Facility" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Therapy Session" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Group Activity" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1579165466741-6eb9a5d75a8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Yoga Session" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Counseling" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Healthy Food" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-[#731012]">সফলতার গল্প</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- Video Testimonial -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative pb-[56.25%] bg-black">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Patient testimonial" class="absolute h-full w-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-[#731012] rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-[#faf068] text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">রফিকের গল্প</h3>
+                        <p class="text-gray-600 mb-4">5 বছর মাদকাসক্ত ছিলেন, এখন 3 বছর মাদকমুক্ত</p>
+                        <p class="text-gray-700">"সূর্যছায়া না থাকলে আমি আজ বেঁচেই থাকতাম না। দিপু স্যারের ব্যক্তিগত পরিচর্যা ও পরামর্শ আমাকে নতুন জীবন দিয়েছে। এখন আমি একটি রেস্টুরেন্ট চালাই এবং সুখে আছি।"</p>
+                    </div>
+                </div>
+                
+                <!-- Written Testimonial -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative pb-[56.25%] bg-black">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Patient testimonial" class="absolute h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">আনিকার পরিবর্তন</h3>
+                        <p class="text-gray-600 mb-4">3 বছর মাদকাসক্ত ছিলেন, এখন 2 বছর মাদকমুক্ত</p>
+                        <p class="text-gray-700">"আমি ভেবেছিলাম আমার জীবন শেষ। সূর্যছায়ার দিপু স্যার ও তার টিম আমাকে নতুনভাবে বাঁচতে শিখিয়েছেন। আজ আমি একটি এনজিওতে কাজ করি এবং অন্য মাদকাসক্তদের সাহায্য করি।"</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="review-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1467&q=80" alt="Patient" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">জাহিদ হাসান</h4>
+                            <div class="flex text-[#faf068]">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"আমার পরিবার আমাকে ছেড়ে দিয়েছিল। সূর্যছায়া আমাকে শুধু মাদকমুক্তই করেনি, আমার পরিবারকেও ফিরিয়ে দিয়েছে। দিপু স্যারের ধৈর্য্য ও পরামর্শের জন্য আমি আজ 4 বছর ধরে মাদকমুক্ত।"</p>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="review-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Patient" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">রফিকুল ইসলাম</h4>
+                            <div class="flex text-[#faf068]">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"7 বছর ধরে আমি মাদকাসক্ত ছিলাম। সূর্যছায়ার দিপু স্যারের ব্যক্তিগত তত্ত্বাবধানে 6 মাসের প্রোগ্রাম আমার জীবন বদলে দিয়েছে। আজ আমি একটি গার্মেন্টস ফ্যাক্টরিতে সুপারভাইজার হিসেবে কাজ করি।"</p>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="review-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Patient" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">আনিকা আহমেদ</h4>
+                            <div class="flex text-[#faf068]">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"মাদকাসক্তি থেকে মুক্তি পাওয়ার পর আমি এখন একটি এনজিওতে কাজ করি এবং অন্য মাদকাসক্তদের সাহায্য করি। দিপু স্যারের অনুপ্রেরণা ও গাইডেন্স ছাড়া এটা সম্ভব হতো না। সূর্যছায়া সত্যিই একটি আশার আলো।"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-[#731012] text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">আপনার প্রিয়জনের জন্য সাহায্য প্রয়োজন?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">এখনই দিপু স্যারের সাথে সরাসরি যোগাযোগ করুন</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:01646756000" class="bg-[#faf068] hover:bg-yellow-600 text-[#731012] font-bold py-3 px-8 rounded-full transition flex items-center justify-center">
+                    <i class="fas fa-phone mr-2"></i> 01646-756000
+                </a>
+                <a href="tel:01882028505" class="bg-white hover:bg-gray-100 text-[#731012] font-bold py-3 px-8 rounded-full transition flex items-center justify-center">
+                    <i class="fas fa-phone mr-2"></i> 01882-028505
+                </a>
+                <a href="https://wa.me/8801646756000" class="bg-green-600 hover:bg-green-800 text-white font-bold py-3 px-8 rounded-full transition flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-[#731012]">আমাদের ঠিকানা</h2>
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md h-full">
+                        <h3 class="text-xl font-bold mb-4 text-[#731012]">সূর্যছায়া মাদকাসক্তি পুনর্বাসন কেন্দ্র</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-[#faf068] p-2 rounded-full mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt text-[#731012]"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">ঠিকানা:</p>
+                                    <p class="text-gray-700">২৯৫, এম. এ রশিদ মাস্টার কমপ্লেক্স, পশ্চিম টেংরা ক্যানেল পাড়, সারুলিয়া, ডেমরা, ঢাকা - ১৩৬১</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-[#faf068] p-2 rounded-full mr-4">
+                                    <i class="fas fa-phone text-[#731012]"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">ফোন:</p>
+                                    <p class="text-gray-700">01646-756000 (দিপু স্যার)</p>
+                                    <p class="text-gray-700">01882-028505</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-[#faf068] p-2 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-[#731012]"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">ইমেইল:</p>
+                                    <p class="text-gray-700">dipumanik90@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-[#faf068] p-2 rounded-full mr-4">
+                                    <i class="fas fa-clock text-[#731012]"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">খোলার সময়:</p>
+                                    <p class="text-gray-700">সপ্তাহের ৭ দিন, ২৪ ঘন্টা</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="h-96 w-full rounded-lg overflow-hidden shadow-md">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.395847919109!2d90.4397253153843!3d23.672438996812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8f9d2a384a1%3A0x8f7a8e3b3e3b3e3b!2sSurochhaya%20Drug%20Addiction%20Rehabilitation%20Center!5e0!3m2!1sen!2sbd!4v1620000000000!5m2!1sen!2sbd" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#731012] text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-sun text-[#faf068] text-2xl"></i>
+                        <span class="text-xl font-bold">সূর্যছায়া</span>
+                    </div>
+                    <p class="mt-2 text-sm">মাদকাসক্তি পুনর্বাসন কেন্দ্র</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-[#faf068] transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="tel:01646756000" class="hover:text-[#faf068] transition"><i class="fas fa-phone text-xl"></i></a>
+                    <a href="https://wa.me/8801646756000" class="hover:text-[#faf068] transition"><i class="fab fa-whatsapp text-xl"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-[#8a2b2d] mt-6 pt-6 text-center text-sm">
+                <p>© 2025 সূর্যছায়া মাদকাসক্তি পুনর্বাসন কেন্দ্র — সকল অধিকার সংরক্ষিত</p>
+                <p class="mt-2">পরিচালক: মানিক হোসেন দিপু</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/8801646756000" class="fixed bottom-6 right-6 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-700 transition duration-300 z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>
